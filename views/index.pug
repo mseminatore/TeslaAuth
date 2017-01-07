@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  hr
+  p Sign in with your Tesla.com credentials to link your Tesla account to Alexa.  
+
+  form(method="POST", action="/login")
+    p
+      input(type='email', name='username', placeholder='Email address')
+    p
+      input(type='password', name='password', placeholder='Password')
+    p
+      input(type='submit', style='background-color:red;border:0;color:white', value='SIGN IN')
+  hr
+  p <strong>Note:</strong> Your credentials are not retained.  See the 
+  a(href='/privacy') Privacy Statement 
+  | for additional details.
+  
