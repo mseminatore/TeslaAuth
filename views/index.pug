@@ -5,7 +5,7 @@ block content
   hr
   p Sign in with your Tesla.com credentials to link your Tesla account to Alexa.  
 
-  form(method="POST", action="/login")
+  form(method="POST", action="/login?redirect_uri=/&state=good")
     p
       input(type='email', name='username', placeholder='Email address')
     p

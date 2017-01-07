@@ -30,9 +30,9 @@ app.use('/privacy', privacy);
 
 //
 app.post('/login', function (req, res, next) {
-  console.log(req.body);
-  
-  tjs.loginAsync(req.username, req.password).then(function(result) {
+  tjs.login(req.body.username, req.body.password, function(err, result) {
+    console.log(result.authToken);
+
     // return the auth and refresh tokens and also return required Alexa params
     // request includes: state, response_type, scope, and redirect_uri 
     // TODO - verify the client_id and fail if not a match
