@@ -31,12 +31,17 @@ app.use('/privacy', privacy);
 //
 app.post('/login', function (req, res, next) {
   tjs.login(req.body.username, req.body.password, function(err, result) {
-    console.log(result.authToken);
+//    console.log(result.authToken);
+    var redirect_uri = app.locals.redirect_uri;
+    var state = app.locals.state;
+    
+    console.log(redirect_uri);
+    console.log(state);
 
     // return the auth and refresh tokens and also return required Alexa params
     // request includes: state, response_type, scope, and redirect_uri 
     // TODO - verify the client_id and fail if not a match
-    res.redirect(req.redirect_uri + "?state=" + req.state + "&access_token=" + result.authToken + "&token_type=Bearer");
+    res.redirect(redirect_uri + "#state=" + state + "&access_token=" + result.authToken + "&token_type=Bearer");
   });
 });
 
