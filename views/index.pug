@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Provide your Tesla.com credentials to link your account to Alexa.  
+  p(class='note') Provide your Tesla.com credentials to link your account to Alexa.  
 
   form(method="POST", action="/login")
     div(class='panel')
@@ -17,7 +17,9 @@ block content
   br
   br
   p(class='note') 
-    | <strong>Note:</strong> Your logon credentials are not retained by this site.  See the 
+    | Refer to the 
     a(href='/privacy') Privacy Statement
-    |  for additional details.
+    |  and 
+    a(href='/terms') Terms of Use
+    |  for important information and additional details on your rights and obligations with respect to the use of this skill and service.
   

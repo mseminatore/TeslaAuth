@@ -9,6 +9,7 @@ var tjs = require('teslajs');
 // define routes
 var index = require('./routes/index');
 var privacy = require('./routes/privacy');
+var terms = require('./routes/terms');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // define pages
 app.use('/', index);
 app.use('/privacy', privacy);
+app.use('/terms', terms);
 
 //
 app.post('/login', function (req, res, next) {
