@@ -6,3 +6,25 @@ body {
 a {
   color: #00B7FF;
 }
+
+hr {
+  color: grey;
+}
+
+.logon {
+  padding: 3px 0px 3px 10px;
+  width: 280px;
+  height: 30px;
+  font: 18px Arial;
+  border: 1px solid lightgray;
+  border-color: lightgrey;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  font: 18px Arial;
+  background-color:red;
+  border:0;
+  color:white;
+}
