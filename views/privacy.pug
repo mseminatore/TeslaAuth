@@ -2,7 +2,30 @@ extends layout
 
 block content
   h1= title
-  hr
-  p This service is not sanctioned by or affiliated with Tesla Motors or Tesla.com
-  p  
-  p This site does not and will not retain the login credentials you provide.  Credentials are kept only long enough to acquire a Tesla OAuth token to provide to Alexa and then they are discarded.  Tokens can be invalidated at any time by changing your account password.
+
+  h3 TERMS
+  p 1. This website and its associated Alexa Skill are herein referred to as "the service."
+  p 2. The OAuth token acquired as part of the account linking process is herein referred to as "the token."
+  p 3. The individual using the service is herein referred to as "the user."
+  p 4. Amazon and the Alexa service are herein referred to as "the Alexa service."
+
+  h3 INFORMATION COLLECTED
+  p The service receives the provided logon credentials and acquires a token on the users behalf.
+  
+  h3 USE OF INFORMATION COLLECTED
+  p The service provides the acquired token to the Alexa service for use with the associated Alexa Skill.
+  
+  h3 INFORMATION RETENTION
+  p The service does NOT retain information the user provides, or that the service acquires on the users behalf. 
+    | Logon credentials are maintained only long enough to successfully acquire a token.
+  p Tokens acquired by this service can be invalidated at any time by changing the Tesla.com account password.
+  p Disabling the associated skill will cause the Alexa service to discard the token that it holds.
+
+  h3 INFORMATION SHARING
+  p The token acquired on the users behalf is provided to the Alexa service.  During transport the token is 
+    | secured using the methods provided by the Alexa service.
+  p The service does NOT sell or share the information it acquires with 3rd parties other than the Alexa service and Tesla.com.
+    
+  h3 AFFILIATION
+  p The service is neither sanctioned by nor affiliated with Tesla Motors or Tesla.com in any way.
+  

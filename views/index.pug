@@ -2,20 +2,21 @@ extends layout
 
 block content
   h1= title
-  p Sign in with your Tesla.com credentials to link your Tesla account to Alexa.  
-  hr
+  p Provide your Tesla.com credentials to link your account to Alexa.  
 
   form(method="POST", action="/login")
-    p
-      input(type='email', size="180", class='logon', name='username', placeholder='Email address')
-    p
-      input(type='password', class='logon', name='password', placeholder='Password')
-    p
-      input(type='submit', class='button', value='SIGN IN')
-  p
-  p
-  hr
-  p 
+    div(class='panel')
+      p(class='panelHeader') Sign In
+      hr
+      p
+        input(type='email', class='logon', name='username', placeholder='Email address')
+      p
+        input(type='password', class='logon', name='password', placeholder='Password')
+      p
+        input(type='submit', class='button', value='Link Account')
+  br
+  br
+  p(class='note') 
     | <strong>Note:</strong> Your logon credentials are not retained by this site.  See the 
     a(href='/privacy') Privacy Statement
     |  for additional details.
