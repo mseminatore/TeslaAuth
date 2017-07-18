@@ -10,6 +10,9 @@ The website correctly handles and responds to account linking query request from
 
 # Alexa-Tesla Skill
 
-This website was originally setup to enable account linking with the 
+This website was originally setup to demonstrate/enable account linking with the 
 [Alexa-Tesla](https://github.com/mseminatore/alexa-tesla) skill.
 
+# Running
+
+To run the server type `npm start`
