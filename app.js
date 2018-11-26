@@ -35,14 +35,16 @@ app.post('/login', function (req, res, next) {
   tjs.login(req.body.username, req.body.password, function(err, result) {
     var redirect_uri = app.locals.redirect_uri;
     var state = app.locals.state;
-    
+
 //    console.log(redirect_uri);
 //    console.log(state);
     // TODO - verify the client_id and fail if not a match
 
     // return the auth and refresh tokens and also return required Alexa params
-    // request includes: state, response_type, scope, and redirect_uri 
-    res.redirect(redirect_uri + "#state=" + state + "&access_token=" + result.authToken + "&token_type=Bearer");
+    // request includes: state, response_type, scope, and redirect_uri
+    var uri = redirect_uri + "#state=" + state + "&access_token=" + result.authToken + "&refresh_token=" + result.refreshToken + "&expires_in=" + result.body.expires_in + "&created_at=" + result.body.created_at + "&token_type=" + result.body.token_type;
+    console.log(uri);
+    res.redirect(uri);
   });
 });
 

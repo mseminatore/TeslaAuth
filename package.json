@@ -16,7 +16,7 @@
     "Tesla",
     "Alexa",
     "Echo",
-    "Express",
+    "ExpressJS",
     "TeslaJS",
     "Model S",
     "Model X",
@@ -32,6 +32,6 @@
     "morgan": "~1.8.2",
     "pug": "~2.0.0-rc.2",
     "serve-favicon": "~2.4.3",
-    "teslajs": "^2.1.32"
+    "teslajs": "^4.0.0"
   }
 }

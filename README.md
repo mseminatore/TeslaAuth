@@ -6,8 +6,8 @@ Alexa Skills Kit (ASK) project - Monitoring and control of Tesla vehicles accoun
 
 This website provides a complete example of packaged account linking capability for the Amazon Echo service 
 and the Alexa skills Kit.  This website is ready to deploy to a cloud hosting service such as Microsoft
-Azure.  The site uses Express and the [TeslaJS library](https://github.com/mseminatore/TeslaJS) 
-to provide a webapp that can authenticate a user with Tesla.com and acquire an OAuth token for Alexa.
+Azure.  The site uses [ExpressJS](http://www.expressjs.com) and the [TeslaJS library](https://www.teslajs.org) 
+to provide a webapp that authenticates a user with Tesla.com and acquires an OAuth token for Alexa.
 
 The website correctly handles and responds to account linking query request from the Amazon Alexa service.
 
