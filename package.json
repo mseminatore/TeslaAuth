@@ -32,6 +32,6 @@
     "morgan": "~1.9.1",
     "pug": "^2.0.4",
     "serve-favicon": "~2.5.0",
-    "teslajs": "^4.7.4"
+    "teslajs": "^4.7.5"
   }
 }
