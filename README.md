@@ -1,6 +1,7 @@
 # TeslaAuth
 [![License](https://img.shields.io/github/license/mseminatore/TeslaControlSite.svg?style=flat)](https://github.com/mseminatore/TeslaAuth/blob/master/LICENSE)
 [![Dependencies](https://david-dm.org/mseminatore/TeslaAuth.svg)](https://david-dm.org/mseminatore/TeslaAuth)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=mseminatore/TeslaAuth)](https://dependabot.com)
 
 Alexa Skills Kit (ASK) project - Monitoring and control of Tesla vehicles account Linking example site
 
